@@ -1,0 +1,16 @@
+<html>
+	<body>
+		<script type="text/javascript" src="jquery-1.4.3.min.js"></script>
+		<script type="text/javascript" src="jquery.json-2.2.min.js"></script>
+		<script type="text/javascript" src="jquery.easyrpc.js"></script>
+		<script language="javascript">
+		var php = null;
+		$(document).ready(function()
+		{
+			php = $.easyrpc({url:"Functions.php",debug:true});
+		});
+		</script>
+		<input type="button" value="send" onclick="php.send('helloWorld','toxtli')">
+	</body>
+</html>
+
