@@ -1,8 +1,8 @@
 <?php
 include_once("easyrpc.php");
 
-function saludos($nombre)
+function helloWorld($nombre)
 {
-	return "Buen dia $nombre";
+	return "Hello $nombre";
 }
 ?>
